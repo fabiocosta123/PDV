@@ -9,20 +9,14 @@
 </head>
     
 <body>
-    <section>
-        <h1>ELECTRA</h1>
-        <label for="quantidade"></label>
-        <input type="number" name="quantidade" id="quantidade" placeholder="Quantidade">
+    <h1>ELECTRA</h1>
 
-        <label for="valor"></label>
-        <input type="number" name="valor" id="valor" placeholder="Valor">
+    <div class="Cadastro">
+        <h1>Cadastro de produtos</h1>
 
-        <label for="pagar"></label>
-        <input type="button" value="pagar" onclick="pagar()" id="pagar" placeholder="Valor à pagar">
-
-        <label for="total"></label>
-        <div id="total"> Total</div>
-    </section>
+        <button onclick="produtos.cadastrar()">Cadastrar</button>
+        <button onclick="produtos.excluir()">Excluir</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
