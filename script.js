@@ -40,9 +40,12 @@ class Produto {
 
             let imgExcluir = document.createElement('img')
             imgExcluir.src = 'img/excluir.png'
+            imgExcluir.setAttribute('onclick','produto.deletar('+ this.arrayProdutos[i].id +')')
 
             td_acoes.appendChild(imgEdit)
             td_acoes.appendChild(imgExcluir)
+
+            
             
         }
     }
@@ -85,6 +88,16 @@ class Produto {
         document.getElementById('preço').value = ''
 
     }
+    deletar(id){
+
+        let tbody = document.getElementById('tbody')
+        for(let i = 0; i < this.arrayProdutos.length; i++){
+            if(this.arrayProdutos[i].id == id){
+                this.arrayProdutos.splice(i,1)
+                tbody.deleteRow(i)
+            }
+        }
+    }    
 }
 
 let produto = new Produto()
