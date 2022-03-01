@@ -14,8 +14,37 @@ class Produto {
         if(this.validaCampo(produto)){
           this.adicionar(produto)
         }
-        console.log(this.arrayProdutos)
+        this.listaTabela()
+        this.cancelar()
 
+    }
+
+    listaTabela(){
+        let tbody = document.getElementById('tbody')
+        tbody.innerText = ''
+
+        for(let i=0; i<this.arrayProdutos.length; i++){
+            let tr = tbody.insertRow()
+
+            let td_id = tr.insertCell()
+            let td_produto = tr.insertCell()
+            let td_preco = tr.insertCell()
+            let td_acoes = tr.insertCell()
+
+            td_id.innerText = this.arrayProdutos[i].id
+            td_produto.innerText = this.arrayProdutos[i].nameProduto
+            td_preco.innerText = this.arrayProdutos[i].preço
+
+            let imgEdit = document.createElement('img')
+            imgEdit.src = 'img/editar-arquivo.png'
+
+            let imgExcluir = document.createElement('img')
+            imgExcluir.src = 'img/excluir.png'
+
+            td_acoes.appendChild(imgEdit)
+            td_acoes.appendChild(imgExcluir)
+            
+        }
     }
 
     adicionar (produto){
@@ -52,7 +81,9 @@ class Produto {
     }
 
     cancelar(){
-        
+        document.getElementById('produtos').value = ''
+        document.getElementById('preço').value = ''
+
     }
 }
 
