@@ -5,18 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <title>PDV</title>
 </head>
     
 <body>
-    <h1>ELECTRA</h1>
+    <main>
+        <header>
+            <h1>Frente de Caixa</h1>
 
-    <div class="Cadastro">
-        <h1>Cadastro de produtos</h1>
+        </header>
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de produtos</span>
+        </div>       
+        <div class="card">
+            <div class="lineInput">
+                <label for="produtos">Produtos</label>
+                <input type="text" id="produtos" placeholder="Nome do produto">
+            </div>
 
-        <button onclick="produtos.cadastrar()">Cadastrar</button>
-        <button onclick="produtos.excluir()">Excluir</button>
-    </div>
+            <div class="lineInput">
+                <label for="valor">Valor</label>
+                <input type="text" id="valor" placeholder="Valor do produto">
+
+            </div>
+
+            <button onclick="produtos.cadastrar()">Cadastrar</button>
+            <button onclick="produtos.excluir()">Excluir</button>
+        
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Banana</td>
+                        <td>2,30</td>
+                        <td>
+                            <img src="/img/editar-arquivo.png" alt="">
+                            <img src="/img/excluir.png" alt="">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Maça</td>
+                        <td>5,99</td>
+                        <td>
+                            <img src="/img/editar-arquivo.png" alt="">
+                            <img src="/img/excluir.png" alt="">
+                        </td>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Uva</td>
+                            <td>9,90</td>
+                            <td>
+                                <img src="/img/editar-arquivo.png" alt="">
+                                <img src="/img/excluir.png" alt="">
+                            </td>
+                        </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>   
+    
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
