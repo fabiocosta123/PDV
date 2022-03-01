@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(247, 238, 238);
+    
+}
+
+header#nomeSistema {
+    text-align: center;
+   
+}
+header h1 {
+    color: rgb(18, 83, 213);
+    margin-top: 2%;
+    font-size: 50px;
+}
+
+div#codigoQuantidade {
+    margin-top: 3%;
+    margin-left: 5%;
+   
+}
+input#codigo {
+    text-align: center;
+    color: blue;
+    width: 4%;
+    height: 2%;
+}
+input#quantidade {
+    text-align: center;
+    margin-left: 5%;
+    width: 4%;
+    height: 2%;
+}

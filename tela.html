@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tela.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="cadastro.js">
+    <title>PDV</title>
+</head>
+<body>
+    <main>
+        <section>
+            <header id="nomeSistema">
+                <h1>Nome do Sistema</h1>
+            </header>
+
+            <div id="codigoQuantidade">
+                <label for="codigo"></label>
+              Digite o código do produto<input type="number" name="codigo" id="codigo" placeholder="Código">
+
+                <label for="quantidade"></label>
+               <input type="number" name="quantidade" id="quantidade" placeholder="Qtde">
+            </div>
+                
+            <div id="botao">
+                <button id="cadastrar" value="cadastrar">Cadastrar +</button>
+            </div>
+
+            <div id="preco">
+                <label for="valor"></label>
+                <input type="number" name="valor" id="valor" placeholder="Total a Pagar">
+            </div>
+        </section>
+
+        <section id="exibirProduto">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                </thead>
+            </table>
+        </section>
+    </main>
+
+    
+</body>
+</html>
