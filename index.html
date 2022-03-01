@@ -28,13 +28,13 @@
             </div>
 
             <div class="lineInput">
-                <label for="valor">Valor</label>
-                <input type="text" id="valor" placeholder="Valor do produto">
+                <label for="preço">Valor</label>
+                <input type="text" id="preço" placeholder="Valor do produto">
 
             </div>
 
-            <button onclick="produtos.cadastrar()">Cadastrar</button>
-            <button onclick="produtos.excluir()">Excluir</button>
+            <button onclick="produto.salvar()">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
         
         </div>
 
@@ -46,36 +46,8 @@
                     <th>Valor</th>
                     <th>Ações</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Banana</td>
-                        <td>2,30</td>
-                        <td>
-                            <img src="/img/editar-arquivo.png" alt="">
-                            <img src="/img/excluir.png" alt="">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>2</td>
-                        <td>Maça</td>
-                        <td>5,99</td>
-                        <td>
-                            <img src="/img/editar-arquivo.png" alt="">
-                            <img src="/img/excluir.png" alt="">
-                        </td>
-
-                        <tr>
-                            <td>3</td>
-                            <td>Uva</td>
-                            <td>9,90</td>
-                            <td>
-                                <img src="/img/editar-arquivo.png" alt="">
-                                <img src="/img/excluir.png" alt="">
-                            </td>
-                        </tr>
-                    </tr>
+                <tbody id="tbody">
+            
                 </tbody>
             </table>
         </div>   
