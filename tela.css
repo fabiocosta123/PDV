@@ -1,17 +1,20 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
+
+
 
 body {
     background-color: rgb(247, 238, 238);
     
 }
 
-header#nomeSistema {
-    text-align: center;
+
    
-}
+
 header h1 {
+    text-align: center;
     color: rgb(18, 83, 213);
     margin-top: 2%;
     font-size: 50px;
@@ -23,6 +26,7 @@ div#codigoQuantidade {
    
 }
 input#codigo {
+    margin-left: 3%;
     text-align: center;
     color: blue;
     width: 4%;
@@ -31,6 +35,38 @@ input#codigo {
 input#quantidade {
     text-align: center;
     margin-left: 5%;
-    width: 4%;
-    height: 2%;
+    width: 8%;
+    height: 15%;
+}
+
+#adicionar {
+    margin-left: 13%;
+}
+#nomeProduto {
+    margin-left: 3%;
+    width: 35%;
+}
+
+.content {
+    background-color: rgb(231, 228, 208);
+    width: 60%;
+    height: 400px;
+}
+
+#tabela {
+    display: inline-block;
+    font-size: 20px;
+    width: 100px;
+    padding-left: 30%;
+   
+    
+}
+
+#coluna {
+    padding: 15% 0;
+}
+
+footer {
+    font-size: 60px;
+    color: blue;
 }
