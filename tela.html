@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="tela.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="cadastro.js">
+    
     <title>PDV</title>
 </head>
 <body>
@@ -18,33 +18,48 @@
             </header>
 
             <div id="codigoQuantidade">
-                <label for="codigo"></label>
-              Digite o código do produto<input type="number" name="codigo" id="codigo" placeholder="Código">
 
                 <label for="quantidade"></label>
-               <input type="number" name="quantidade" id="quantidade" placeholder="Qtde">
+                <input type="number" name="quantidade" id="quantidade" placeholder="Qtde">
+
+                <label for="codigo"></label>
+                <input type="number" name="codigo" id="codigo" placeholder="Código">
+                <input type="text" name="produto" id="nomeProduto" placeholder="Nome do Produto">
+                <input type="button" value="adicionar" id="adicionar">
+
+               
             </div>
                 
             <div id="botao">
-                <button id="cadastrar" value="cadastrar">Cadastrar +</button>
+                <input type="button" value="cadastrar" id="cadastrar" onclick="window.open('cadastro.html','_self')">
             </div>
+              
 
-            <div id="preco">
-                <label for="valor"></label>
-                <input type="number" name="valor" id="valor" placeholder="Total a Pagar">
-            </div>
+          
         </section>
 
-        <section id="exibirProduto">
-            <table border="1">
-                <thead>
+        <div class="content">
+            <table  id="tabela">
+                <thead id="coluna">
                     <th>ID</th>
                     <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
                 </thead>
+                <tbody id="tbody">
+            
+                </tbody>
             </table>
-        </section>
+        </div>   
+
+        
+        
     </main>
 
-    
+    <script src="tela.js"></script>
+    <script src="cadastro.js"></script>
 </body>
+<footer>
+    <p>Total à pagar r$</p>
+</footer>
 </html>
