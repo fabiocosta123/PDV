@@ -38,6 +38,19 @@ input{
     border: 1px solid #ccc;
     outline: 0;
 }
+input#voltar {
+    border: 0;
+    padding: 10px;
+    margin-left: 96%;
+
+    outline: 0;
+    background-color:#8a2be2 ;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: lighter;
+    transition: all ease 0.4s;
+
+}
 
 button {
     border: 0;
