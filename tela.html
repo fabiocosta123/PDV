@@ -25,7 +25,8 @@
                 <label for="codigo"></label>
                 <input type="number" name="codigo" id="codigo" placeholder="Código">
                 <input type="text" name="produto" id="nomeProduto" placeholder="Nome do Produto">
-                <input type="button" value="adicionar" id="adicionar">
+                <input type="number" name="preco" id="preco" placeholder="preco">
+                <input type="button" value="adicionar" id="adicionar" onclick="multiplica()">
 
                
             </div>
@@ -41,10 +42,10 @@
         <div class="content">
             <table  id="tabela">
                 <thead id="coluna">
-                    <th>ID</th>
-                    <th>Produto</th>
-                    <th>Valor</th>
-                    <th>Ações</th>
+                    <th id="id">ID</th>
+                    <th id="produto">Produto</th>
+                    <th id="valor">Valor</th>
+                    <th id="acoes">Ações</th>
                 </thead>
                 <tbody id="tbody">
             
