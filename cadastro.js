@@ -1,4 +1,4 @@
-
+ 
 
 class Produto {
 
@@ -25,7 +25,7 @@ class Produto {
         
         this.listaTabela()
         this.cancelar()
-        this.multiplica()
+        
         
     }
 
