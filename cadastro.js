@@ -1,3 +1,5 @@
+
+
 class Produto {
 
 
@@ -20,9 +22,11 @@ class Produto {
             ]
       
         }
+        
         this.listaTabela()
         this.cancelar()
-
+        this.multiplica()
+        
     }
 
     listaTabela(){
@@ -124,8 +128,13 @@ class Produto {
                 }
             }      
         }   
-    }    
+    } 
+    
+   
 }
 
 let produto = new Produto()
+
+
+
 
