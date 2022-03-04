@@ -4,7 +4,7 @@
 
 body{
     font-family: 'Sanchez', serif;    
-    background-color: rgb(234, 243, 240);
+    background-color: #eaf3f0;
 
 
 }
@@ -63,7 +63,7 @@ button {
     transition: all ease 0.4s;
 
 }
-button:hover {
+button:hover{
     background-color: #bd9eda;
 }
 

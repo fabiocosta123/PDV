@@ -10,17 +10,16 @@ body {
     margin-top: 2%;
     width: 95%;
     height: 700px;
-    background-color: rgb(247, 238, 238);
-    border: solid 1px black;
+    background-color: #a890bd;
+    border: solid 1px rgb(235, 229, 229);
 }
 
 
 
    
-
 header h1 {
     text-align: center;
-    color: rgb(18, 83, 213);
+    color:white;
     margin-top: 2%;
     font-size: 50px;
 }
@@ -29,40 +28,86 @@ div#codigoQuantidade {
     margin-top: 3%;
     margin-left: 5%;
    
+   
+    
+   
 }
 input#codigo {
     margin-left: 3%;
     text-align: center;
     color: blue;
     width: 4%;
-    height: 2%;
+    height: 30px;
+    
 }
 input#quantidade {
     text-align: center;
-    margin-left: 5%;
+    margin-left: 8.5%;
     width: 8%;
-    height: 15%;
+    height: 30px;
+    
+    border: 1px solid #ccc;
+    outline: 0;
+    
 }
 
+#preco {
+    margin-left: 5%;
+    height: 30px;
+}
 #botao {
     display: flex;
-    margin-bottom: 3%;
-    margin-left: 2%
+  
 }
 
-#adicionar {
-    margin-left: 13%;
+#cadastrar {
+    margin-left: 3%;
+    margin-top: -2.3%;
+    border: 0;
+    padding: 10px;
+    outline: 0;
+    background-color:#8a2be2 ;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: lighter;
+    transition: all ease 0.4s;
+  
+
+}
+button:hover#cadastrar {
+    background-color: #bd9eda;
+}
+
+#adiciona{
+    margin-left: 7%;
+    border: 0;
+    padding: 10px;
+    outline: 0;
+    background-color:#8a2be2 ;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: lighter;
+    transition: all ease 0.4s;  
+    
+}
+
+button:hover#adiciona{
+    background-color: #bd9eda;
 }
 #nomeProduto {
     margin-left: 3%;
-    width: 35%;
+    width: 40%;
+    height: 30px;
+    
 }
 .content {
     display: flex;
     width: 95%;
     height: 400px;
-    background-color: aquamarine;
+    background-color:rgb(235, 227, 227);
     border: 1px solid black;
+    margin-left: 3%;
+    margin-top: 5%;
 }
 
 
@@ -90,6 +135,7 @@ input#quantidade {
 }
 
 footer {
-    font-size: 60px;
-    color: blue;
+    font-size: 45px;
+    color: white;
+    margin-left: 3%;
 }
