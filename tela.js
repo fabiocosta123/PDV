@@ -1,5 +1,5 @@
 
-class Vendas {
+/*class Vendas {
     constructor(){
         this.id = 1
         this.arrayVendas = []
@@ -95,4 +95,13 @@ class Vendas {
     } 
 }
 
-let vendas = new Vendas()
+let vendas = new Vendas()*/
+
+function multiplica(){
+    let totalQuantidade = document.getElementById('quantidade').value 
+    let totalPreco = document.getElementById('preco').value
+    let total = totalQuantidade * totalPreco
+    return (total)
+    
+}
+
