@@ -10,8 +10,9 @@ body {
     margin-top: 2%;
     width: 95%;
     height: 700px;
-    background-color: #a5a0c7;
+    background-color: #0000ff;
     border: solid 1px rgb(235, 229, 229);
+    
 }
 
 
@@ -19,7 +20,7 @@ body {
    
 header h1 {
     text-align: center;
-    color:rgb(8, 1, 1);
+    color:rgb(252, 252, 252);
     margin-top: 2%;
     font-size: 50px;
 }
@@ -66,7 +67,7 @@ input#quantidade {
     border: 0;
     padding: 10px;
     outline: 0;
-    background-color:#270c0b ;
+    background-color:#0000ff ;
     color: #fff;
     border-radius: 3px;
     font-weight: lighter;
@@ -83,7 +84,7 @@ button:hover#cadastrar {
     border: 0;
     padding: 10px;
     outline: 0;
-    background-color:#270c0b ;
+    background-color:#0000ff ;
     color: #fff;
     border-radius: 3px;
     font-weight: lighter;
@@ -137,6 +138,6 @@ button:hover#adiciona{
 
 footer {
     font-size: 45px;
-    color: rgb(10, 9, 9);
+    color: rgb(243, 235, 235);
     margin-left: 3%;
 }
