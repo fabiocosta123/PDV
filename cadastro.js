@@ -135,6 +135,19 @@ class Produto {
 
 let produto = new Produto()
 
+// código abaixo colocar informações no localstorage
+
+const localstorageProdutos = () => localStorage.setItem('produtos', JSON.stringify(arrayProdutos))
+
+/*const produtoLocalStorage = inputNomeProduto.value.trim()
+const valorLocalStorage = inputValorProduto.value.trim()
+const addLocalStorage = {
+    produto: produtoLocalStorage,
+    valor: Number(valorLocalStorage)
+}*/
+
+
+
 
 
 
